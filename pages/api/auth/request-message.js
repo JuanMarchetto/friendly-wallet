@@ -11,7 +11,7 @@ const config = {
 
 export default async function handler(req, res) {
   const { address, chain, network } = req.body;
-
+console.log(process.env)
   await Moralis.start({ apiKey: process.env.MORALIS_API_KEY });
 
   try {
