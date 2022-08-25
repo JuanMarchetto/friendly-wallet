@@ -1,1 +1,2 @@
-## Friendly Wallet
+
+# Friendly wallet
