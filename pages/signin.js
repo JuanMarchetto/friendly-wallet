@@ -27,7 +27,6 @@ function SignIn() {
         });
 
         const message = data.message;
-
         const signature = await signMessageAsync({ message });
 
         // redirect user after success authentication to '/user' page
