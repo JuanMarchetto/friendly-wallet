@@ -42,10 +42,11 @@ export default function Home() {
   return (
     <div className="bg-black pb-72 pt-6 place-content-evenly grid  ">
       <div className=" container mx-auto px-5place-content-evenly grid grid-cols-3 justify-center items-center ">
-      {contacts.map(({img, url})=>(
+      {contacts.map(({img, url}, index)=>(
         <ContactSelector
           img={img}
           url={url}
+          key={index}
         />)
       )}
       </div>
